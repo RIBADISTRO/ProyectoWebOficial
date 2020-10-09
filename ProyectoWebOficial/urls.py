@@ -18,7 +18,8 @@ from django.urls import path, include
 # from ProyectoWebApp import views
 urlpatterns = [
     path('admin/', admin.site.urls),
-    path('', include('ProyectoWebApp.urls')),
+    path('servicios/', include('servicios.urls')),  #Registro la app servicio
+    path('', include('ProyectoWebApp.urls')),       #Registro la app ProyectoWebApp
     
 ]
 

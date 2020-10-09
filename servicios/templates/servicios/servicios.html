@@ -1,0 +1,42 @@
+{% extends  "ProyectoWebApp/base.html" %}
+{% load static %}
+{% block content %}
+<!-- Vamos a cargar todos los servicios 
+desde el templates con un ciclo forearch-->
+
+{% for servicio in serviciosAll %}
+<section class="page-section clearfix">
+    <div class="container">
+        <div class="intro">
+            <img class="intro-img img-fluid mb-3 mb-lg-0 rounded" src="{{servicio.imagen.url}}" alt="" style="width: 50%;">
+            <div class="intro-text left-0 text-center bg-faded p-5 rounded">
+                <h2 class="section-heading mb-4">
+                    <span class="section-heading-lower">{{servicio.titulo}}</span>
+                    <span class="section-heading-upper">{{servicio.contenido}}</span>
+                </h2>
+            </div>
+        </div>
+    </div>
+</section>
+{% endfor %}
+
+ 
+{% endblock%}
+
+
+
+<!-- <!DOCTYPE html>
+<html>  
+<head>
+    <meta charset='utf-8'>
+    <meta http-equiv='X-UA-Compatible' content='IE=edge'>
+    <title>Page Title</title>
+    <meta name='viewport' content='width=device-width, initial-scale=1'>
+    <link rel='stylesheet' type='text/css' media='screen' href='main.css'>
+    <script src='main.js'></script>
+</head>
+<body>
+        <h1>Servicios</h1>
+    
+</body>
+</html> -->

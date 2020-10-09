@@ -162,7 +162,7 @@ p {
   position: relative;
   padding: 3rem;
   margin: 0.5rem;
-  background-color: rgba(24, 64, 8);
+  background-color: rgb(16, 245, 111);
   color: cornsilk;
 }
 
@@ -174,7 +174,7 @@ p {
   bottom: -0.5rem;
   left: -0.5rem;
   right: -0.5rem;
-  border: 0.25rem solid rgba(255, 255, 255, 0.85);
+  border: 0.25rem solid rgba(30, 51, 39, 0.85);
 }
 
 .cta .cta-innerv {

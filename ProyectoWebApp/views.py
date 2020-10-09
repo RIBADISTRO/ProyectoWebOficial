@@ -1,13 +1,15 @@
 from django.shortcuts import render, HttpResponse
+# from servicios.models import Servicio
 
 # Create your views here.
 def inicio(request):
     # return HttpResponse("Inicio")
     return render(request,'ProyectoWebApp/index.html')
 
-def servicios(request):
+""" def servicios(request):
+    serviciosAll = Servicio.objects.all() # de esta forma le decimos a django que carge la class de nuestro  views
     # return HttpResponse("Servicio")
-    return render(request,'ProyectoWebApp/servicios.html')
+    return render(request,'ProyectoWebApp/servicios.html', {"serviciosAll" : serviciosAll}) """
 
 def tienda(request):
     # return HttpResponse("Tienda")
