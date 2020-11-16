@@ -6,8 +6,8 @@ from django.db import models
     almacenando. Generalmente, cada modelo se asigna a una sola tabla de
     base de datos. 
 
-    $ python manage.py migrate
-    $ python manage.py makemigrations
+    $ python manage.py migrate ""
+    $ python manage.py makemigrations 
 
     """
 

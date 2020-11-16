@@ -6,4 +6,5 @@ from django.conf.urls.static import static
 # Importacion de la vistas
 urlpatterns = [
     path('', views.servicios, name='Servicios'),
+    
 ]

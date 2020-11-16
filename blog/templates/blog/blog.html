@@ -1,0 +1,27 @@
+{% extends  "ProyectoWebApp/base.html" %}
+{% load static %}
+{% block content %}
+<!-- Vamos a cargar todos los servicios 
+desde el templates con un ciclo forearch-->
+
+{% for post1 in posts %}
+<section class="page-section clearfix">
+    <div class="container">
+        <div class="intro">
+            <img class="intro-img img-fluid mb-3 mb-lg-0 rounded" src="{{post1.imagen.url}}" alt="" style="width: 50%;">
+            <div class="intro-text left-0 text-center bg-faded p-5 rounded">
+                <h2 class="section-heading mb-4">
+                    <span class="section-heading-lower">{{post1.titulo}}</span>
+                    <span class="section-heading-upper">{{post1.contenido}}</span>  
+                </h2>
+
+                <div style="text-align: left; font-size: 0.8em;">
+                    autor: {{post1.autor}}
+                </div>
+            </div>
+        </div>
+    </div>
+</section>
+{% endfor %}
+
+{% endblock%}

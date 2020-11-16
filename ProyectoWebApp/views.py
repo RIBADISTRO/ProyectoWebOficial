@@ -15,13 +15,13 @@ def tienda(request):
     # return HttpResponse("Tienda")
     return render(request,'ProyectoWebApp/tienda.html')
 
-def blog(request):
+""" def blog(request):
     # return HttpResponse("Blog")
-    return render(request,'ProyectoWebApp/blog.html')
+    return render(request,'ProyectoWebApp/blog.html') """
 
-def contacto(request):
+""" def contacto(request):
     # return HttpResponse("Contacto")
-    return render(request,'ProyectoWebApp/contacto.html')
+    return render(request,'ProyectoWebApp/contacto.html') """
 
 def cita(request):
     # return HttpResponse("Contacto")
